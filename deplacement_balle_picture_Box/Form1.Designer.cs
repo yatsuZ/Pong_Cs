@@ -88,11 +88,12 @@
             this.groupBox1.Size = new System.Drawing.Size(785, 288);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::deplacement_balle_picture_Box.Properties.Resources.ball_red_blur;
-            this.pictureBox1.Location = new System.Drawing.Point(391, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(36, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

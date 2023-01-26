@@ -4,6 +4,8 @@ namespace deplacement_balle_picture_Box
     {
         readonly int sensX = 10;
         readonly int sensY = 10;
+        readonly int maxX = 785;
+        readonly int maxY = 288;
         int deplacementX = 10;
         int deplacementY = 10;
         public Form1()
@@ -78,14 +80,31 @@ namespace deplacement_balle_picture_Box
             int x = pictureBox1.Location.X;
             int y = pictureBox1.Location.Y;
             if (x < 0)
-                deplacementX = sensX * -1;
+            {
+                pictureBox1.Location = new Point(0, y);
+                deplacementX = deplacementX * -1;
+            }
             if (y < 0)
-                deplacementY = sensY * -1;
+            {
+                pictureBox1.Location = new Point(x, 0);
+                deplacementY = deplacementY * -1;
+            }
             if (x > groupBox1.Size.Width - pictureBox1.Size.Width)
-                deplacementX = sensX * -1;
+            {
+                x = maxX - pictureBox1.Size.Width;
+                deplacementX = deplacementX * -1;
+            }
             if (y > groupBox1.Size.Height - pictureBox1.Size.Height)
-                deplacementY = sensY * -1;
+            {
+                y = maxY - pictureBox1.Size.Height;
+                deplacementY = deplacementY * -1;
+            }
             pictureBox1.Location = new Point(x + deplacementX, y + deplacementY);
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
