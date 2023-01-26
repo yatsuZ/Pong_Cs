@@ -7,10 +7,17 @@ je suis les video [sur se site web](https://www.rgot.org/tag/c/).
 
 ### explication du projet :
 
-Picture_Box et la premiere video du site qui consiste a ouvrire une fenetre qui à 2 bouton
-qui lorsque nous appuyons sur un bouton change une image.
+#### 2iem video :
 
-[2iem viedo](https://youtu.be/nGgilJ9XXCc)
+Cree une fenetre qui contien 4 bouton et qui fais deplacer la balle dans une zone defini lorseque nous
+nous appuyons sur les boutons.
+
+#### 3iem video :
+
+L'immage doit se deplacer seul et rebondie en cas de colision.
+
+[2iem video](https://youtu.be/nGgilJ9XXCc)
+[3iem video](https://youtu.be/J2j5XM5Vd6g)
 ---
 
 # Fais par yatsuZ.
