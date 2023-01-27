@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button_replay = new System.Windows.Forms.Button();
+            this.scoreG = new System.Windows.Forms.TextBox();
+            this.scoreD = new System.Windows.Forms.TextBox();
             this.raquetteGauche = new System.Windows.Forms.PictureBox();
             this.raquetteDroite = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -42,6 +45,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Black;
+            this.groupBox1.Controls.Add(this.button_replay);
+            this.groupBox1.Controls.Add(this.scoreG);
+            this.groupBox1.Controls.Add(this.scoreD);
             this.groupBox1.Controls.Add(this.raquetteGauche);
             this.groupBox1.Controls.Add(this.raquetteDroite);
             this.groupBox1.Controls.Add(this.pictureBox1);
@@ -51,6 +58,38 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // button_replay
+            // 
+            this.button_replay.Enabled = false;
+            this.button_replay.Location = new System.Drawing.Point(353, 24);
+            this.button_replay.Name = "button_replay";
+            this.button_replay.Size = new System.Drawing.Size(123, 60);
+            this.button_replay.TabIndex = 6;
+            this.button_replay.Text = "rejouer";
+            this.button_replay.UseVisualStyleBackColor = true;
+            this.button_replay.Visible = false;
+            this.button_replay.Click += new System.EventHandler(this.button_replay_Click);
+            // 
+            // scoreG
+            // 
+            this.scoreG.Enabled = false;
+            this.scoreG.Location = new System.Drawing.Point(63, 19);
+            this.scoreG.Multiline = true;
+            this.scoreG.Name = "scoreG";
+            this.scoreG.Size = new System.Drawing.Size(128, 23);
+            this.scoreG.TabIndex = 5;
+            this.scoreG.Visible = false;
+            // 
+            // scoreD
+            // 
+            this.scoreD.Enabled = false;
+            this.scoreD.Location = new System.Drawing.Point(634, 19);
+            this.scoreD.Multiline = true;
+            this.scoreD.Name = "scoreD";
+            this.scoreD.Size = new System.Drawing.Size(110, 23);
+            this.scoreD.TabIndex = 4;
+            this.scoreD.Visible = false;
             // 
             // raquetteGauche
             // 
@@ -94,6 +133,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::deplacement_balle_picture_Box.Properties.Resources.nebuleuse;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
@@ -116,5 +157,8 @@
         private System.Windows.Forms.Timer timer1;
         private PictureBox raquetteDroite;
         private PictureBox raquetteGauche;
+        private Button button_replay;
+        private TextBox scoreG;
+        private TextBox scoreD;
     }
 }

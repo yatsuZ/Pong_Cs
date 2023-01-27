@@ -10,7 +10,10 @@ namespace deplacement_balle_picture_Box
         readonly int maxY = 432;
         int deplacementX = -10;
         int deplacementY = 10;
+        int pointD = 0;
+        int pointG = 0;
         bool FIN = true;
+
         public Form1()
         {
             InitializeComponent();
@@ -142,6 +145,10 @@ namespace deplacement_balle_picture_Box
             //////////////////////////
             if (FIN == false)
                 return;
+            button_replay.Enabled = false;
+            button_replay.Visible = false;
+            scoreD.Visible = false;
+            scoreG.Visible = false;
             //////////////////////////
             SoundPlayer player = new SoundPlayer(deplacement_balle_picture_Box.Properties.Resources.bounce_song2);
             if (x < 0)
@@ -187,11 +194,23 @@ namespace deplacement_balle_picture_Box
             else if (y > 280)
                 raquetteGauche.Location = new Point(x, 280);
             /////////////////////:
-            if (end_Game() != 0)
+            int resulta = end_Game();
+            if (resulta != 0)
             {
+                if (resulta == 1)//G gagne un point
+                    pointG++;
+                else if (resulta == 2)//D gagne 
+                    pointD++;
+                scoreD.Text = pointD.ToString();
+                scoreG.Text = pointG.ToString();
                 FIN = false;
+                scoreG.Visible= true;
+                scoreD.Visible= true;
+                button_replay.Visible = true;
                 player = new SoundPlayer(deplacement_balle_picture_Box.Properties.Resources.loos_song);
                 player.Play();
+                button_replay.Enabled = true;
+                pictureBox1.Location = new Point(maxX / 2, maxY / 2);
             }
         }
 
@@ -258,6 +277,11 @@ namespace deplacement_balle_picture_Box
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_replay_Click(object sender, EventArgs e)
+        {
+            FIN = true;
         }
     }
 }

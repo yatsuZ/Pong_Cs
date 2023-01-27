@@ -149,6 +149,16 @@ namespace deplacement_balle_picture_Box.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nebuleuse {
+            get {
+                object obj = ResourceManager.GetObject("nebuleuse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Palette {
             get {
                 object obj = ResourceManager.GetObject("Palette", resourceCulture);
