@@ -121,16 +121,31 @@
   <data name="ball_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ball_blue.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ball_magenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ball_magenta.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ball_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ball_green.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ball_red_blur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ball_red_blur.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ball_magenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ball_magenta.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ball_yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ball_yellow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ball_red_blur" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ball_red_blur.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Palette" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Palette.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bounce_song" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bounce_song.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bounce_song2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bounce_song2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="drip_goku" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drip_goku.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="loos_song" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loos_song.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
