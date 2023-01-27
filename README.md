@@ -19,7 +19,7 @@ LES TOUCHES :
 
 # Exemple Visuelle :
 
-![demonstatrion visuelle de mon projet pong](./)
+![demonstatrion visuelle de mon projet pong](./Pong_Cs/deplacement_balle_picture_Box/Resources/Exemple_Pong.png)
 
 ---
 
